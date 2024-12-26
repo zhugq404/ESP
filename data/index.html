@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能家居控制面板</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>智能家居控制面板</h1>
+    <div class="device" id="led">
+      <h2>LED 控制</h2>
+      <img id="led_img" src="led_off.png" alt="LED">
+      <div class="status" id="led_status">已熄灭</div>
+      <button class="toggle" onclick="toggleDevice('LED')">点亮LED</button>
+    </div>
+    <div class="device" id="motor">
+      <h2>电机控制</h2>
+      <img id="motor_img" src="motor_off.png" alt="Motor">
+      <div class="status" id="motor_status">已停止</div>
+      <button class="toggle" onclick="toggleDevice('MOTOR')">启动电机</button>
+    </div>
+    <div class="device" id="fan">
+      <h2>风扇控制</h2>
+      <img id="fan_img" src="fan_off.png" alt="Fan">
+      <div class="status" id="fan_status">已停止</div>
+      <button class="toggle" onclick="toggleDevice('FAN')">启动风扇</button>
+    </div>
+    <h2>场景模式</h2>
+    <button class="scene" onclick="activateScene('WAKEUP')">起床模式</button>
+    <button class="scene" onclick="activateScene('HOME')">回家模式</button>
+  </div>
+</body>
+</html>

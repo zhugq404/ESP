@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .device {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .device img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .device .status {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .device .toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .scene {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .on {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .off {
+    background-color: #f44336;
+    color: white;
+  }
